@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Geist Black';
+  src: url('../../../node_modules/geist/dist/fonts/geist-sans/Geist-Black.woff2');
+}
+
+.geist-black {
+  font-family: 'Geist Black';
+}
+
+@font-face {
+  font-family: 'Geist Regular';
+  src: url('../../../node_modules/geist/dist/fonts/geist-sans/Geist-Regular.woff2');
+}
+
+.geist-regular {
+  font-family: 'Geist Light';
+}
+
+
+
+#ContenedorTarjetas{
+  padding-bottom: 50px;
+}
+
+
+.tarjetaPokemon{
+  text-align: center;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
+  background-image: radial-gradient(at center bottom, rgb(202, 202, 202), rgb(85, 83, 83));
+  border: 10px solid ;
+  border-image-slice: 1;
+  opacity: 0.9;
+  width: 95%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.tarjetaPokemon:hover{
+  transform: scale(1.05);
+  box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.75);
+
+}
+
+.tarjetaPokemon h2 {
+  font-size: 1.7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: Geist Black, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.1rem;
+  padding-top: 1.5rem;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.caracteristicasPokemon{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  font-family: Geist Regular, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.tarjetaPokemon p {
+  font-size: 0.8rem;
+  font-weight: 750;
+  font-family: Geist Regular, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  padding-top: 1.3rem;
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+
+.tarjetaPokemon img {
+  padding-top: 1rem;
+  width: 65%;
+  max-width: 65%;
+  max-height: 55%;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.tarjetaPokemon img:hover {
+  transform: scale(1.2);
+   /* background-image: radial-gradient(at center bottom, rgb(202, 202, 202), rgb(85, 83, 83)); */
+}
+
+#imgPokemon{
+  width: 75%;
+  max-width: 75%;
+  max-height: 65%;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: -96px;
+  left: 50px;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+@media screen and (max-width: 767px) {
+  #ContenedorTarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3rem;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #ContenedorTarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+  }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+  #ContenedorTarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    justify-items: center;
+    align-items: center;
+    row-gap: 3.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #ContenedorTarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-items: center;
+    align-items: center;
+    row-gap: 3.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .tarjetaPokemon{
+    width: 90%;
+
+  }
+}
+
+
+#imgPokemon{
+  width: 75%;
+  max-width: 75%;
+  max-height: 65%;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: -95px;
+  left: 45px;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+@media (width < 1440px) {
+  #imgPokemon{
+    top: -103px;
+    left: 55px;
+  }
+}
+
+@media (width < 1024px) {
+  #imgPokemon{
+    top: -80px;
+    left: 45px;
+  }
+}
+
+@media (width <= 768px) {
+  #imgPokemon{
+    top: -74px;
+    left: 35px;
+  }
+}
+
+@media (width < 425px) {
+  #imgPokemon{
+    top: -78px;
+    left: 35px;
+  }
+}
+@media (width < 375px) {
+  #imgPokemon{
+    top: -65px;
+    left: 30px;
+  }
+}
+

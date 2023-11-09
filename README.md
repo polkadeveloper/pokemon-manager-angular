@@ -1,27 +1,42 @@
-# PokemonManager
+# Pokémon Manager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
+Bienvenido a Pokémon Manager, una aplicación web para ver las características de tu Pokémon de manera fácil y eficiente.
 
-## Development server
+## Descripción
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Pokémon Manager es una herramienta diseñada para ayudarte a administrar tu colección de Pokémon.
 
-## Code scaffolding
+## Características principales
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Interfaz fácil de usar:** Navega y utiliza la aplicación de manera intuitiva.
+- **Visualización de manera vistosa:** Mira las tarjetas pokemon con su correspondientes características, imágenes y colores personalizados
 
-## Build
+## Instalación
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clona este repositorio: `git clone https://github.com/alvarob27/pokemon-manager-angular.git`
+2. Abre el archivo `index.html` en tu navegador.
 
-## Running unit tests
+## Contribuir
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Si quieres contribuir a Pokémon Manager, sigue estos pasos:
 
-## Running end-to-end tests
+1. Haz un fork del repositorio.
+2. Crea una nueva rama para tu función: `git checkout -b nueva-funcion`
+3. Realiza tus cambios y haz commit: `git commit -m 'Añade nueva función'`
+4. Haz push a la rama: `git push origin nueva-funcion`
+5. Abre un pull request en GitHub.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Tecnologías utilizadas
 
-## Further help
+- Angular
+- HTML5
+- CSS3
+- TypeScript
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contacto
+
+Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto:
+
+- Correo electrónico: alvarobarcena27@gmail.com
+
+¡Gracias por usar Pokémon Manager!
